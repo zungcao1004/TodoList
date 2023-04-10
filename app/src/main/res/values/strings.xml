@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Todo List</string>
+    <string name="enter_your_to_do_item">Enter your to-do item</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="update">Update</string>
+    <string name="reset">Reset</string>
+</resources>

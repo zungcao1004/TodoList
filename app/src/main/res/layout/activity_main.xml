@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/input_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/enter_your_to_do_item"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="2"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColorHint="#757575" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_text"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/del_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_text"
+        android:layout_toEndOf="@+id/add_button"
+        android:layout_marginStart="7dp"
+        android:text="@string/delete" />
+
+    <Button
+        android:id="@+id/update_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_text"
+        android:layout_toEndOf="@+id/del_button"
+        android:layout_marginStart="7dp"
+        android:text="@string/update" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_text"
+        android:layout_toEndOf="@+id/update_button"
+        android:layout_marginStart="7dp"
+        android:text="@string/reset" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/add_button"
+        android:layout_marginTop="16dp" />
+
+
+</RelativeLayout>
